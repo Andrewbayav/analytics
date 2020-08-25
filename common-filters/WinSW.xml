@@ -1,0 +1,8 @@
+<configuration>
+    <id>telescope-analytics</id>
+    <name>Telescope Analytics Service</name>
+    <description>String boot application that provides analytics reports of Corporate Optic Network</description>
+    <executable>c:\Program Files\Java\jre1.8.0_152\bin\java.exe</executable>
+    <arguments>-server -Dserver.port=59543 -Dserver.http.port=9290 -Dserver.ssl.key-store-type=PKCS12 -Dserver.ssl.key-store=c:\Programs\apache-tomcat-9.0\conf\tomcat9.keystore.pkcs12 -Dserver.ssl.key-store-password=1234567890 -Dserver.ssl.key-alias=tomcat -Dsecurity.require-ssl=true -jar c:\Programs\spring-boot-analytics\analytics-0.1.1-SNAPSHOT.jar</arguments>
+    <onfailure action="restart" delay="30 sec"/>
+</configuration>

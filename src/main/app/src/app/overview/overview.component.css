@@ -1,0 +1,138 @@
+/* from https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css */
+
+.calendar{padding:4px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;direction:ltr;overflow-x:hidden;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.calendar:after{clear:both;content:"";display:block}.calendar .calendar-rtl{direction:rtl}.calendar .calendar-rtl .calendar-rtl table tr td span{float:right}.calendar table{margin:auto;border-spacing:0}.calendar table td,.calendar table th{text-align:center;width:20px;height:20px;border:none;padding:4px 5px;font-size:12px}.calendar .calendar-header{width:100%;margin-bottom:20px;border:1px solid #ddd}.calendar .calendar-header table{width:100%}.calendar .calendar-header table th{font-size:22px;padding:5px 10px;cursor:pointer}.calendar .calendar-header table th:hover{background:#eee}.calendar .calendar-header table th.disabled,.calendar .calendar-header table th.disabled:hover{background:0 0;cursor:default;color:#fff}.calendar .calendar-header table th.next,.calendar .calendar-header table th.prev{width:20px}.calendar .calendar-header .year-title{font-weight:700;text-align:center;height:20px;width:auto}.calendar .calendar-header .year-neighbor{opacity:.4}@media (max-width:991px){.calendar .calendar-header .year-neighbor{display:none}}.calendar .calendar-header .year-neighbor2{opacity:.2}@media (max-width:767px){.calendar .calendar-header .year-neighbor2{display:none}}.calendar .months-container{width:100%;display:none}.calendar .months-container .month-container{float:left;text-align:center;height:200px;padding:0}.calendar .months-container .month-container.month-2{width:16.66666667%}.calendar .months-container .month-container.month-3{width:25%}.calendar .months-container .month-container.month-4{width:33.33333333%}.calendar .months-container .month-container.month-6{width:50%}.calendar .months-container .month-container.month-12{width:100%}.calendar table.month th.month-title{font-size:16px;padding-bottom:5px}.calendar table.month th.day-header{font-size:14px}.calendar table.month tr td,.calendar table.month tr th{padding:0}.calendar table.month tr td.hidden,.calendar table.month tr th.hidden{display:none}.calendar table.month td.week-number{cursor:default;font-weight:700;border-right:1px solid #eee;padding:5px}.calendar table.month td.day.round-left{-webkit-border-radius:8px 0 0 8px;-moz-border-radius:8px 0 0 8px;border-radius:8px 0 0 8px}.calendar table.month td.day.round-right{webkit-border-radius:0 8px 8px 0;-moz-border-radius:0 8px 8px 0;border-radius:0 8px 8px 0}.calendar table.month td.day .day-content{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:5px 6px}.calendar table.month td.new,.calendar table.month td.new:hover,.calendar table.month td.old,.calendar table.month td.old:hover{background:0 0;cursor:default}.calendar table.month td.disabled,.calendar table.month td.disabled:hover{color:#ddd}.calendar table.month td.disabled .day-content:hover,.calendar table.month td.disabled:hover .day-content:hover{background:0 0;cursor:default}.calendar table.month td.range .day-content{background:rgba(0,0,0,.2);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.calendar table.month td.range.range-start .day-content{border-top-left-radius:4px;border-bottom-left-radius:4px}.calendar table.month td.range.range-end .day-content{border-top-right-radius:4px;border-bottom-right-radius:4px}.calendar .calendar-loading-container{position:relative;text-align:center;min-height:200px}.calendar .calendar-loading-container .calendar-loading{position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%)}.calendar .calendar-spinner{margin:20px auto;width:80px;text-align:center}.calendar .calendar-spinner>div{width:16px;height:16px;margin:5px;background-color:#333;border-radius:100%;display:inline-block;-webkit-animation:sk-bouncedelay 1s infinite ease-in-out both;animation:sk-bouncedelay 1s infinite ease-in-out both}.calendar .calendar-spinner>div.bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}.calendar .calendar-spinner>div.bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}.calendar-context-menu,.calendar-context-menu .submenu{border:1px solid #ddd;background-color:#fff;box-shadow:2px 2px 5px rgba(0,0,0,.2);-webkit-box-shadow:2px 2px 5px rgba(0,0,0,.2);position:absolute;display:none}.calendar-context-menu .item{position:relative}.calendar-context-menu .item .content{padding:5px 10px;cursor:pointer;display:table;width:100%;white-space:nowrap}.calendar-context-menu .item .content:hover{background:#eee}.calendar-context-menu .item .content .text{display:table-cell}.calendar-context-menu .item .content .arrow{display:table-cell;padding-left:10px;text-align:right}.calendar-context-menu .item .submenu{top:-1px}.calendar-context-menu .item .submenu:not(.open-left){left:100%}.calendar-context-menu .item .submenu.open-left{right:100%}.calendar-context-menu .item:hover>.submenu{display:block}.table-striped .calendar table.month tr td,.table-striped .calendar table.month tr th{background-color:transparent}table.month td.day .day-content:hover{background:rgba(0,0,0,.2);cursor:pointer}@-webkit-keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0)}40%{-webkit-transform:scale(1)}}@keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+.wrapper {
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns:  1fr 1fr;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table tr:hover {
+  background: #2bdaed;
+}
+
+table tr.marked{
+  background-color: #00b6ed;
+}
+
+table td {
+  padding: .625em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+table th {
+  height: 35px;
+  background: #d0d0d0;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.reportname {
+  text-align: right;
+  font-weight: bolder;
+  margin-right: 15px;
+}
+
+.telSelect {
+  display: inline-block;
+  width: 180px;
+  height: 34px;
+  line-height: 30px;
+  position: relative;
+  margin: auto;
+  margin-left: 15px;
+}
+
+.event-tooltip-content:not(:last-child) {
+  border-bottom:1px solid #ddd;
+  padding-bottom:5px;
+  margin-bottom:5px;
+}
+
+.event-tooltip-content .event-title {
+  font-size:18px;
+  text-align: center;
+}
+
+.event-tooltip-content .event-location {
+  font-size:12px;
+}
+
+

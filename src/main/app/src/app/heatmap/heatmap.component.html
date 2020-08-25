@@ -1,0 +1,36 @@
+<div id="document" style="visibility:hidden" [@.disabled]="true">
+
+  <div id="blockingScreen"><div *ngIf="busy"><img src="assets/images/ai.gif"/><br/>{{ 'all.loading' | translate }}</div></div>
+  <div class="wrapper">
+    <p class="reportname">{{ 'heatmap.reportname' | translate }} </p>
+
+    <select id="select" (change)="selectYear($event.target.value)" class="yearSelect">
+      <option value="">{{ 'heatmap.value' | translate }}</option>
+    </select>
+  </div>
+
+  <div style="margin-top: 20px;"></div>
+  <div style="text-align:center" *ngFor="let i of this.chartOptionsArr | async">
+    <apx-chart
+      [series]=i.series
+      [chart]=i.chart
+      [xaxis]=i.xaxis
+      [title]=i.title
+      [colors]=i.colors
+      [tooltip]=i.tooltip
+    ></apx-chart>
+  </div>
+<!--  [plotOptions]=i.plotOptions-->
+
+  <div id="context-menu">
+    <div class="item" id="transparency">
+      <i class="fa">transparency</i>
+    </div>
+    <div class="item" id="tracks">
+      <i class="fa">tracks</i>
+    </div>
+    <div class="item" id="planetarium">
+      <i class="fa">planetarium</i>
+    </div>
+  </div>
+</div>

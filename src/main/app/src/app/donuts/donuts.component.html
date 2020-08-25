@@ -1,0 +1,41 @@
+<div id="document" style="visibility: hidden">
+  <div id="blockingScreen"><div *ngIf="busy"><img src="assets/images/ai.gif"/><br/>{{ 'all.loading' | translate }}</div></div>
+
+  <div class="wrapper">
+    <p class="reportname">{{ 'donuts.reportname' | translate }}</p>
+
+    <select id="select" (change)="selectYear($event.target.value)" class="selectYear">
+      <option value="">{{ 'donuts.value' | translate }}</option>
+    </select>
+  </div>
+
+  <div id="title" class="wrapper" style="visibility:hidden">
+    <p class="subreportname">{{ 'donuts.subreportname' | translate }}</p>
+    <p class="subreportname">{{ 'donuts.subreportname2' | translate }}</p>
+  </div>
+
+  <div id = "donuts" style="visibility:hidden" class="wrapper">
+    <div style="text-align:center">
+      <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [plotOptions]="chartOptions.plotOptions"
+        [labels]="chartOptions.labels"
+        [colors]="chartOptions.colors"
+        [dataLabels] = "chartOptions.dataLabels"
+      ></apx-chart>
+    </div>
+
+    <div style="text-align:center">
+      <apx-chart
+        [series]="chartOptions2.series"
+        [chart]="chartOptions2.chart"
+        [plotOptions]="chartOptions2.plotOptions"
+        [labels]="chartOptions2.labels"
+        [colors]="chartOptions2.colors"
+      ></apx-chart>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,77 @@
+{
+  "all": {
+    "loading": "Данные загружаются ..."
+  },
+  "donuts" : {
+    "title": "Эффективность",
+    "reportname": "Эффективность работы сети телескопов за год: ",
+    "value": "Выберите год",
+    "subreportname": "Количество наблюдательных ночей с начала года",
+    "subreportname2": "Количество наблюдений с начала года",
+    "total": "Всего"
+  },
+  "heatmap": {
+    "title": "Тепловая карта",
+    "reportname": "Тепловая карта наблюдаемых ночей всеми телескопами за год: ",
+    "value": "Выберите год",
+    "date": "дата",
+    "measurements": "измерения"
+  },
+  "overview": {
+    "title": "Сводный отчет",
+    "reportname": "Наблюдательные ночи телескопа:  ",
+    "value": "Выберите телескоп",
+    "measurements": "измерения",
+    "transparency": "атмосфера",
+    "tracks": "треки",
+    "planetarium": "планетарий"
+  },
+  "am" : {
+    "transparencyTitle": "Прозрачность, яркость, шумы, точность",
+    "transparencyChart": "Прозрачность атмосферы",
+    "transparency": "Прозрачность",
+    "brightnessChart": "Фоновая яркость",
+    "brightness": "Яркость",
+    "noiseChart": "Шум в кадре",
+    "noise": "Шум",
+    "accuracyChart": "Точность наведения телескопа",
+    "accuracy": "Точность, °",
+    "tracksTitle": "Плановые и реальные треки, гистограммы",
+    "median": "Медиана",
+
+    "timeDiscrepancy" : "Невязка по времени",
+    "longitudinalDiscrepancy" : "Продольная ошибка",
+    "transverseDiscrepancy" : "Поперечная ошибка",
+    "rangeHistogram" : "Гистограмма дальности",
+    "magnitudeHistogram" : "Гистограмма блеска",
+
+    "time": "Время сек.",
+    "offset": "Ошибка м.",
+    "range": "Дальность км.",
+    "magnitude": "Блеск",
+    "plan": "План",
+    "real": "Факт",
+    "tracks": "Измерения",
+
+    "discrepancyParsedChart": "Ошибки измерений",
+    "angularCoordinatesChart": "Угловые координаты",
+    "angleOfPlaceDeg": "Угол места град.",
+    "azimuthDeg": "Азимут град.",
+    "azimuth": "Азимут",
+    "angleOfPlace": "Угол места",
+    "transversal": "Поперечная",
+    "longitudinal": "Продольная",
+    "discrepancyTransverse": "Поперечная ошибка",
+
+
+    "planetariumTitle": "Планетарий",
+    "bytime" : "Ко времени",
+    "value" : "Значение",
+
+    "norad" : "Объект",
+    "points" : "Отметки",
+    "from" : "из",
+    "duration" : "Длительность"
+
+  }
+}

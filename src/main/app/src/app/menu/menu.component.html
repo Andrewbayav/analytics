@@ -1,0 +1,38 @@
+
+<div class="app-header">
+<nav class="menu" id="nav_menu">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+    <span class="hamburger hamburger-1"></span>
+    <span class="hamburger hamburger-2"></span>
+    <span class="hamburger hamburger-3"></span>
+  </label>
+
+  <a href="/ui/overview" class="menu-item"> <fa-icon [icon]="overviewIcon" id="overviewIcon"></fa-icon> </a>
+  <a href="/ui/donuts" class="menu-item"> <fa-icon [icon]="donutsIcon" id="donutsIcon"></fa-icon> </a>
+  <a href="/ui/am" class="menu-item"> <fa-icon [icon]="amIcon" id="amIcon"></fa-icon> </a>
+  <a href="/ui/heatmap" class="menu-item"> <fa-icon [icon]="heatmapIcon" id="heatmapIcon"></fa-icon> </a>
+</nav>
+
+<!-- filters -->
+<!--<svg xmlns="http://www.w3.org/2000/svg" version="1.1">-->
+
+  <!--<defs>-->
+    <!--<filter id="shadowed-goo">-->
+
+      <!--<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />-->
+      <!--<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />-->
+      <!--<feGaussianBlur in="goo" stdDeviation="3" result="shadow" />-->
+      <!--<feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />-->
+      <!--<feOffset in="shadow" dx="1" dy="1" result="shadow" />-->
+      <!--<feComposite in2="shadow" in="goo" result="goo" />-->
+      <!--<feComposite in2="goo" in="SourceGraphic" result="mix" />-->
+    <!--</filter>-->
+    <!--<filter id="goo">-->
+      <!--<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />-->
+      <!--<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />-->
+      <!--<feComposite in2="goo" in="SourceGraphic" result="mix" />-->
+    <!--</filter>-->
+  <!--</defs>-->
+<!--</svg>-->
+</div>

@@ -1,0 +1,37 @@
+<div id="document" style="visibility: hidden">
+  <span id="telescope" class="title"></span>
+  <button class="accordion" id = transparency>{{ 'am.transparencyTitle' | translate }}</button>
+  <div class="panel">
+    <div id="chartdivatm" style="width: 100%; height: 300px"></div>
+    <div id="chartdivguidance" style="width: 100%; height: 300px"></div>
+    <div id="chartnoise" style="width: 100%; height: 300px"></div>
+    <div id="chartdivtelpos" style="width: 100%; height: 300px"></div>
+  </div>
+
+  <button class="accordion" id = tracks>{{ 'am.tracksTitle' | translate }}</button>
+  <div class="panel" id="tracksPanel">
+    <div class="div-table" >
+      <div class="div-table-row">
+        <div class="div-table-col" id="chartdivbar1"></div>
+        <div class="div-table-col" id="chartdivbar2"></div>
+        <div class="div-table-col" id="chartdivbar3"></div>
+      </div>
+      <div class="div-table-row">
+        <div class="div-table-col" id="chartdivbar4"></div>
+        <div class="div-table-col" id="chartdivbar5"></div>
+      </div>
+    </div>
+    <div id="chartdivident" style="width: 100%; height:300px"></div>
+    <div id="chartdiverrors" style="width: 100%; height:0"></div>
+    <div id="chartdivaltaztrack" style="width: 100%; height:0"></div>
+    <div id="outclick" style="text-align: center; margin-top:20px"></div>
+  </div>
+
+  <button class="accordion" id="planetarium">{{ 'am.planetariumTitle' | translate }}</button>
+  <div class="panel">
+    <div id="chartdivaltaz"></div>
+    <div id="container" style="width: 500px; height: 400px;"></div>
+  </div>
+</div>
+
+

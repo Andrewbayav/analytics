@@ -1,0 +1,18 @@
+<div id="document" style="visibility: hidden">
+  <div id="blockingScreen"><div *ngIf="busy"><img src="assets/images/ai.gif"/><br/>{{ 'all.loading' | translate }}</div></div>
+
+  <div class="wrapper">
+    <!--<div>-->
+      <!--<app-menu></app-menu>-->
+    <!--</div>-->
+    <p class="reportname">{{ 'overview.reportname' | translate }}</p>
+    <select id="telescopeSelected" (change)="selectCode($event.target.value)" class="telSelect">
+      <option value=" ">{{ 'overview.value' | translate }}</option>
+      <option *ngFor="let data of specificationObjects; let i=index" selected="{{data.code == selectedCode ? 'selected' : ''}}" value={{data.code}}>{{data.name + ' ' + data.code}}</option>
+    </select>
+  </div>
+
+  <div id="calendar" data-provide="calendar" style="visibility: hidden"></div>
+  <!--<div id="calendar" data-provide="calendar" ></div>-->
+
+</div>

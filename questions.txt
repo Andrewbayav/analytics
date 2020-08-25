@@ -1,0 +1,16 @@
+Жалоба на clob в хибернейте на постгрес
+tokenValidation - всегда возвращает valid
+                - что будет если api лежит?
+
+application.properties - зачем столько зависимостей от host+port
+HeatmapComponent/OverviewComponent/DonutsComponent - copy+paste -> сервис по проверке/логину
+Разобраться с bind
+
+Календарь
+    - лезет на https://unpkg.com/js-year-calendar@1.0.2/dist/js-year-calendar.min.css - отрезать!
+    - Забирает данные сразу за весь период, а не только за выбранный год. Это долго.
+      Причем каждый раз при смене телескопа забирается весь пакет для всех телескопов
+
+Все showWait() вынести в отдельный сервис и сделать на false/true (раз)блокироску экрана
+
+При смене телескопа в overview год возвращается к текущему

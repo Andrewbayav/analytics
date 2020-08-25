@@ -1,0 +1,64 @@
+body {
+  margin:0;
+  /*font-family:"Open Sans",sans-serif;*/
+}
+
+#context-menu {
+  position:fixed;
+  z-index:10000;
+  width:150px;
+  background: #e8e8e8;
+  border-radius:5px;
+  transform:scale(0);
+  transform-origin:top left;
+}
+#context-menu.active {
+  transform:scale(1);
+  transition:transform 300ms ease-in-out;
+}
+#context-menu .item {
+  padding:8px 10px;
+  font-size:15px;
+  color: #292929;
+}
+#context-menu .item:hover {
+  background: #9d9d9d;
+}
+#context-menu .item i {
+  display:inline-block;
+  margin-right:5px;
+}
+#context-menu hr {
+  margin:2px 0px;
+  border-color:#555;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.yearSelect {
+  display: inline-block;
+  width: 180px;
+  height: 34px;
+  line-height: 30px;
+  position: relative;
+  margin: auto;
+  margin-left: 15px;
+}
+
+.reportname {
+  text-align: right;
+  font-weight: bolder;
+  margin-right: 15px;
+}
+
+.apexcharts-tooltip {
+  margin-top: -30px !important;
+}
+
+.apexcharts-zoom-icon, .apexcharts-zoomin-icon, .apexcharts-zoomout-icon, .apexcharts-reset-icon, .apexcharts-pan-icon, .apexcharts-selection-icon {
+  visibility: hidden !important;
+}
+

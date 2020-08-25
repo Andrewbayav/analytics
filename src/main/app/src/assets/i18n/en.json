@@ -1,0 +1,77 @@
+{
+  "all": {
+    "loading": "Loading data ..."
+  },
+  "donuts" : {
+    "title": "Efficiency",
+    "reportname": "Efficiency of the network of telescopes for year: ",
+    "value": "Select year",
+    "subreportname": "Number of observation nights since the beginning of the year",
+    "subreportname2": "Number of observations since the beginning of the year",
+    "total": "Total"
+  },
+  "heatmap": {
+    "title": "Heatmap",
+    "reportname": "Heatmap of observant nights by all specyfied telescopes for year: ",
+    "value": "Select year",
+    "date": "date",
+    "measurements": "measurements"
+  },
+  "overview": {
+    "title": "Overview",
+    "reportname": "Observant nights by telescope: ",
+    "value": "Select telescope",
+    "measurements": "measurements",
+    "transparency": "transparency",
+    "tracks": "tracks",
+    "planetarium": "planetarium"
+  },
+  "am" : {
+    "transparencyTitle": "Transparency, Brightness, Noise, Accuracy",
+    "transparencyChart": "Transparency of the atmosphere during observations",
+    "transparency": "Transparency",
+    "brightnessChart": "Background brightness",
+    "brightness": "Brightness",
+    "noiseChart": "Noise in the frame",
+    "noise": "Noise",
+    "accuracyChart": "The accuracy of telescope guidance",
+    "accuracy": "Accuracy, °",
+    "tracksTitle": "Plan & Real tracks and Histograms",
+    "median": "Median",
+
+    "timeDiscrepancy" : "Time discrepancy",
+    "longitudinalDiscrepancy" : "Longitudinal Discrepancy",
+    "transverseDiscrepancy" : "Transverse Discrepancy",
+    "rangeHistogram" : "Range histogram",
+    "magnitudeHistogram" : "Magnitude histogram",
+
+    "time": "Time sec.",
+    "offset": "Offset m.",
+    "range": "Range km.",
+    "magnitude": "Magnitude",
+    "plan": "Plan",
+    "real": "Real",
+    "tracks": "Tracks",
+
+    "discrepancyParsedChart": "Discrepancy Parsed  Track",
+    "angularCoordinatesChart": "Angular coordinates of the track",
+    "angleOfPlaceDeg": "Angle of place deg.",
+    "azimuthDeg": "Azimuth deg.",
+    "azimuth": "Azimuth",
+    "angleOfPlace": "Angle of place",
+    "transversal": "Transversal",
+    "longitudinal": "Longitudinal",
+    "discrepancyTransverse": "Discrepancy transverse",
+    "planetariumTitle": "Planetarium",
+
+    "bytime" : "By time",
+    "value" : "Value",
+
+    "norad" : "Norad",
+    "points" : "Points",
+    "from" : "from",
+    "duration" : "Duration"
+
+  }
+}
+

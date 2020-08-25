@@ -1,0 +1,30 @@
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.selectYear {
+  display: inline-block;
+  width: 180px;
+  height: 34px;
+  line-height: 30px;
+  position: relative;
+  margin: auto;
+  margin-left: 15px;
+}
+
+.reportname {
+  text-align: right;
+  font-weight: bolder;
+  margin-right: 15px;
+}
+
+.subreportname {
+  text-align: center;
+}
+
+.apexcharts-legend apexcharts-align position-right{
+  text-align: left;
+}
